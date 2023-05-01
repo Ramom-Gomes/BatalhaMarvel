@@ -1,4 +1,17 @@
 import React, { useState } from "react";
+import capitao from '../images/capitao.jpg';
+import falcao from '../images/falcao.jpg';
+import invernal from '../images/invernal.jpg';
+import formiga from '../images/formiga.jpg';
+import arqueiro from '../images/arqueiro.jpg';
+import feiticeira from '../images/feiticeira.jpg';
+import ferro from '../images/ferro.jpg';
+import maquina from '../images/maquina.jpg'
+import viuva from '../images/viuva.jpg';
+import pantera from '../images/pantera.jpg';
+import visao from '../images/visao.jpg';
+import aranha from '../images/aranha.jpg';
+
 
 export const timeCapitaoAmerica = [
     {
@@ -13,6 +26,7 @@ export const timeCapitaoAmerica = [
         poderesEspeciais: 70,
         nivelExperiencia: 95,
       },
+      imagem: capitao
     },
     {
       nome: "Falcão",
@@ -26,6 +40,7 @@ export const timeCapitaoAmerica = [
         poderesEspeciais: 50,
         nivelExperiencia: 70,
       },
+      imagem: falcao
     },
     {
       nome: "Soldado Invernal",
@@ -39,6 +54,7 @@ export const timeCapitaoAmerica = [
         poderesEspeciais: 70,
         nivelExperiencia: 90,
       },
+      imagem: invernal
     },
     {
       nome: "Homem-Formiga",
@@ -52,6 +68,7 @@ export const timeCapitaoAmerica = [
         poderesEspeciais: 75,
         nivelExperiencia: 60,
       },
+      imagem: formiga
     },
     {
       nome: "Gavião Arqueiro",
@@ -65,6 +82,7 @@ export const timeCapitaoAmerica = [
         poderesEspeciais: 60,
         nivelExperiencia: 80,
       },
+      imagem: arqueiro
     },
     {
       nome: "Feiticeira Escarlate",
@@ -78,6 +96,7 @@ export const timeCapitaoAmerica = [
         poderesEspeciais: 95,
         nivelExperiencia: 70,
       },
+      imagem: feiticeira
     },
 ];
 
@@ -91,7 +110,8 @@ export const timeHomemDeFerro = [
       inteligencia: 100,
       habilidadeCombate: 90,
       poderesEspeciais: 85,
-      nivelExperiencia: 90
+      nivelExperiencia: 90,
+      imagem: ferro
     },
     {
       nome: "Máquina de Combate",
@@ -102,7 +122,8 @@ export const timeHomemDeFerro = [
       inteligencia: 80,
       habilidadeCombate: 80,
       poderesEspeciais: 75,
-      nivelExperiencia: 85
+      nivelExperiencia: 85,
+      imagem: maquina
     },
     {
       nome: "Viúva Negra",
@@ -113,7 +134,8 @@ export const timeHomemDeFerro = [
       inteligencia: 80,
       habilidadeCombate: 95,
       poderesEspeciais: 75,
-      nivelExperiencia: 90
+      nivelExperiencia: 90,
+      imagem: viuva
     },
     {
       nome: "Pantera Negra",
@@ -124,7 +146,8 @@ export const timeHomemDeFerro = [
       inteligencia: 80,
       habilidadeCombate: 95,
       poderesEspeciais: 80,
-      nivelExperiencia: 95
+      nivelExperiencia: 95,
+      imagem: pantera
     },
     {
       nome: "Visão",
@@ -135,7 +158,8 @@ export const timeHomemDeFerro = [
       inteligencia: 100,
       habilidadeCombate: 85,
       poderesEspeciais: 95,
-      nivelExperiencia: 85
+      nivelExperiencia: 85,
+      imagem: visao
     },
     {
       nome: "Homem-Aranha",
@@ -146,6 +170,7 @@ export const timeHomemDeFerro = [
       inteligencia: 80,
       habilidadeCombate: 85,
       poderesEspeciais: 80,
-      nivelExperiencia: 80
+      nivelExperiencia: 80,
+      imagem: aranha
     }
 ];  

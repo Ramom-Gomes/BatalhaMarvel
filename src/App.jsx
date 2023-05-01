@@ -31,12 +31,9 @@ function App() {
               <p className='timeazulinfo'>escolha três personagens</p>
             </div>
             <div className='timeazulescolhadepersonagens'>
-              <div className='timeazulpersonagensparaescolher'>personagem</div>
-              <div className='timeazulpersonagensparaescolher'>personagem</div>
-              <div className='timeazulpersonagensparaescolher'>personagem</div>
-              <div className='timeazulpersonagensparaescolher'>personagem</div>
-              <div className='timeazulpersonagensparaescolher'>personagem</div>
-              <div className='timeazulpersonagensparaescolher'>personagem</div>
+              {timeCapitaoAmerica.map(personagem => (
+                <img className='timeazulpersonagensparaescolher' src={personagem.imagem} alt={personagem.nome} />
+              ))}
             </div>
           </div>
           <div className='timeazulpersonagensescolhidos'>
@@ -57,12 +54,9 @@ function App() {
               <p className='timevermelhoinfo'>escolha três personagens</p>
             </div>
             <div className='timevermelhoescolhadepersonagens'>
-              <div className='timevermelhopersonagensparaescolher'>personagem</div>
-              <div className='timevermelhopersonagensparaescolher'>personagem</div>
-              <div className='timevermelhopersonagensparaescolher'>personagem</div>
-              <div className='timevermelhopersonagensparaescolher'>personagem</div>
-              <div className='timevermelhopersonagensparaescolher'>personagem</div>
-              <div className='timevermelhopersonagensparaescolher'>personagem</div>
+              {timeHomemDeFerro.map(personagem => (
+                <img className='timeazulpersonagensparaescolher' src={personagem.imagem} alt={personagem.nome} />
+              ))}
             </div>
           </div>
           <div className='timevermelholpersonagensescolhidos'>
