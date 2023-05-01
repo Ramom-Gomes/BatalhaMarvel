@@ -14,9 +14,9 @@
     display: flex;
 }
 
-.timeazulcaracteristicas {
+.timeazulcaracteristicas, .timevermelhocaracteristicas {
     margin-top: 110px;
-    margin-bottom: 133px;
+    margin-bottom: 90px;
 }
 
 .personagemnome {
@@ -50,54 +50,54 @@
     margin-left: 50px;
 }
 
-.timeazulescolherpersonagem {
+.timeazulescolherpersonagem, .timevermelhoescolherpersonagem {
     display: flex;
     flex-direction: column;
 }
 
-.timeazultitulo {
+.timeazultitulo, .timevermelhotitulo {
     font-size: 25px;
 }
 
-.timeazulinfo {
+.timeazulinfo, .timevermelhoinfo {
     margin-top: 10px;
     font-size: 16px;
 }
 
-.timeazulescolhadepersonagens {
+.timeazulescolhadepersonagens, .timevermelhoescolhadepersonagens {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 10px;
 }
 
-.timeazulpersonagensparaescolher {
+.timeazulpersonagensparaescolher, .timevermelhopersonagensparaescolher {
     height: 100px;
     width: 100px;
     background-color: black;
 }
 
-.timeazulpersonagensescolhidos {
+.timeazulpersonagensescolhidos, .timevermelholpersonagensescolhidos {
     margin-top: 60px;
 }
 
-.timeazulescolhidostitulo {
+.timeazulescolhidostitulo, .timevermelholescolhidostitulo {
     font-size: 25px;
 }
 
-.timeazulescolhidos {
+.timeazulescolhidos, .timevermelholescolhidos {
     margin-top: 10px;
     display: flex;
 }
 
-.timeazulescolhidosposicao {
+.timeazulescolhidosposicao, .timevermelhoescolhidosposicao {
     margin-right: 20px;
     width: 100px;
     height: 100px;
     background-color: black;
 }
 
-.timeazulescolhidosposicao2 {
+.timeazulescolhidosposicao2, .timevermelhoescolhidosposicao2 {
     width: 100px;
     height: 100px;
     background-color: black;
@@ -106,4 +106,22 @@
 .timevermelho {
     background-color: red;
     flex: 1;
+    display: flex;
+}
+
+.timevermelhopersonagens {
+    margin-top: 80px;
+    margin-left: 70px;
+    margin-right: 50px;
+}
+
+.personagensvermelhocaracteristicas {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.personagemvermelhonome {
+    font-size: 25px;
+    margin-left: 25px;
 }

@@ -49,11 +49,47 @@ function App() {
         </div>
       </section>
       <section className='timevermelho'>
-        <div>
-
+        <div className='timevermelhopersonagens'>
+          <div className='timevermelhoescolherpersonagem'>
+            <div>
+              <h1 className='timevermelhotitulo'>time azul</h1>
+              <p className='timevermelhoinfo'>escolha três personagens</p>
+            </div>
+            <div className='timevermelhoescolhadepersonagens'>
+              <div className='timevermelhopersonagensparaescolher'>personagem</div>
+              <div className='timevermelhopersonagensparaescolher'>personagem</div>
+              <div className='timevermelhopersonagensparaescolher'>personagem</div>
+              <div className='timevermelhopersonagensparaescolher'>personagem</div>
+              <div className='timevermelhopersonagensparaescolher'>personagem</div>
+              <div className='timevermelhopersonagensparaescolher'>personagem</div>
+            </div>
+          </div>
+          <div className='timevermelholpersonagensescolhidos'>
+            <h1 className='timevermelholescolhidostitulo'>escolhidos</h1>
+            <div className='timevermelholescolhidos'>
+              <div className='timevermelhoescolhidosposicao'>escolhido 1</div>
+              <div className='timevermelhoescolhidosposicao'>escolhido 2</div>
+              <div className='timevermelhoescolhidosposicao2'>escolhido 3</div>
+            </div>
+          </div>
         </div>
-        <div>
-          
+        <div className='timevermelhocaracteristicas'>
+          <div>
+            <h1 className='personagemvermelhonome'>nome personagem</h1>
+          </div>
+          <div className='personagenscaracteristicasfundo'>
+            <div className='personagensvermelhocaracteristicas'>
+              <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força</p><p>5</p></div>
+              <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força</p><p>5</p></div>
+              <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força</p><p>5</p></div>
+              <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força</p><p>5</p></div>
+              <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força</p><p>5</p></div>
+              <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força</p><p>5</p></div>
+              <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força</p><p>5</p></div>
+              <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força</p><p>5</p></div>
+              <div className='personagenscaracteristicaespecifica2'><p>Poder total</p><p>5</p></div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
