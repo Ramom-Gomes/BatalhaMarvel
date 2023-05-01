@@ -49,7 +49,12 @@ function App() {
         </div>
       </section>
       <section className='timevermelho'>
-        <h1>vermelho</h1>
+        <div>
+
+        </div>
+        <div>
+          
+        </div>
       </section>
     </main>
   )
