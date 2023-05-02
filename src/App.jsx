@@ -5,6 +5,14 @@ import {timeCapitaoAmerica, timeHomemDeFerro} from "./personagens/personagens";
 function App() {
 
   const [personagemSelecionado, setPersonagemSelecionado] = useState(null);
+  const [personagemSelecionado2, setPersonagemSelecionado2] = useState(null);
+  const [timeTerceiro, setTimeTerceiro] = useState([]);
+
+  function adicionarAoTerceiro(personagem) {
+    setTimeTerceiro(prevTimeTerceiro => [...prevTimeTerceiro, personagem]);
+  }
+
+  console.log(timeTerceiro);
 
   return (
     <main className='main'>
@@ -22,14 +30,14 @@ function App() {
             <div className='personagenscaracteristicas'>
               {personagemSelecionado && (
                 <>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força fisíca</p><p>{personagemSelecionado.habilidades.forcaFisica}</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>velocidade</p><p>{personagemSelecionado.habilidades.velocidade}</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>agilidade</p><p>{personagemSelecionado.habilidades.agilidade}</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>resistência</p><p>{personagemSelecionado.habilidades.resistencia}</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>inteligência</p><p>{personagemSelecionado.habilidades.inteligencia}</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>habilidade de combate</p><p>{personagemSelecionado.habilidades.habilidadeCombate}</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>poderes especiais</p><p>{personagemSelecionado.habilidades.poderesEspeciais}</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>nivel experiência</p><p>{personagemSelecionado.habilidades.nivelExperiencia}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força fisíca</p><p>{personagemSelecionado.forcaFisica}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>velocidade</p><p>{personagemSelecionado.velocidade}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>agilidade</p><p>{personagemSelecionado.agilidade}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>resistência</p><p>{personagemSelecionado.resistencia}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>inteligência</p><p>{personagemSelecionado.inteligencia}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>habilidade de combate</p><p>{personagemSelecionado.habilidadeCombate}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>poderes especiais</p><p>{personagemSelecionado.poderesEspeciais}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>nivel experiência</p><p>{personagemSelecionado.nivelExperiencia}</p></div>
                 </>
               )}
               {!personagemSelecionado && (
@@ -59,7 +67,8 @@ function App() {
                 <img className='timeazulpersonagensparaescolher' 
                 src={personagem.imagem} 
                 alt={personagem.nome}
-                onMouseEnter={() => setPersonagemSelecionado(personagem)} 
+                onMouseEnter={() => setPersonagemSelecionado(personagem)}
+                onClick={() => adicionarAoTerceiro(personagem)} 
                 />
               ))}
             </div>
@@ -83,7 +92,12 @@ function App() {
             </div>
             <div className='timevermelhoescolhadepersonagens'>
               {timeHomemDeFerro.map(personagem => (
-                <img className='timeazulpersonagensparaescolher' src={personagem.imagem} alt={personagem.nome} />
+                <img className='timeazulpersonagensparaescolher' 
+                src={personagem.imagem} 
+                alt={personagem.nome}
+                onMouseEnter={() => setPersonagemSelecionado2(personagem)}
+                onClick={() => adicionarAoTerceiro(personagem)}
+                />
               ))}
             </div>
           </div>
@@ -98,18 +112,39 @@ function App() {
         </div>
         <div className='timevermelhocaracteristicas'>
           <div>
-            <h1 className='personagemvermelhonome'>nome personagem</h1>
+            {personagemSelecionado2 && (
+              <h1 className='personagemnome'>{personagemSelecionado2.nome}</h1>
+            )}
+            {!personagemSelecionado2 && (
+              <h1 className='personagemnome'>nome personagem</h1>
+            )}
           </div>
           <div className='personagenscaracteristicasfundo'>
             <div className='personagensvermelhocaracteristicas'>
-              <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força</p><p>5</p></div>
-              <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força</p><p>5</p></div>
-              <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força</p><p>5</p></div>
-              <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força</p><p>5</p></div>
-              <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força</p><p>5</p></div>
-              <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força</p><p>5</p></div>
-              <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força</p><p>5</p></div>
-              <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força</p><p>5</p></div>
+              {personagemSelecionado2 && (
+                <>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força fisíca</p><p>{personagemSelecionado2.forcaFisica}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>velocidade</p><p>{personagemSelecionado2.velocidade}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>agilidade</p><p>{personagemSelecionado2.agilidade}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>resistência</p><p>{personagemSelecionado2.resistencia}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>inteligência</p><p>{personagemSelecionado2.inteligencia}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>habilidade de combate</p><p>{personagemSelecionado2.habilidadeCombate}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>poderes especiais</p><p>{personagemSelecionado2.poderesEspeciais}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>nivel experiência</p><p>{personagemSelecionado2.nivelExperiencia}</p></div>
+                </>
+              )}
+              {!personagemSelecionado2 && (
+                <>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força fisíca</p><p>5</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>velocidade</p><p>5</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>agilidade</p><p>5</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>resistência</p><p>5</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>inteligência</p><p>5</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>habilidade de combate</p><p>5</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>poderes especiais</p><p>5</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>nível experiência</p><p>5</p></div>
+                </>
+              )}
               <div className='personagenscaracteristicaespecifica2'><p>Poder total</p><p>5</p></div>
             </div>
           </div>

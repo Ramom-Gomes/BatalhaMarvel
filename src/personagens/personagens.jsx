@@ -16,6 +16,7 @@ import aranha from '../images/aranha.jpg';
 export const timeCapitaoAmerica = [
     {
       nome: "Capitão América",
+      /*
       habilidades: {
         forcaFisica: 95,
         velocidade: 60,
@@ -26,10 +27,20 @@ export const timeCapitaoAmerica = [
         poderesEspeciais: 70,
         nivelExperiencia: 95,
       },
+      */
+      forcaFisica: 95,
+      velocidade: 60,
+      agilidade: 60,
+      resistencia: 90,
+      inteligencia: 70,
+      habilidadeCombate: 100,
+      poderesEspeciais: 70,
+      nivelExperiencia: 95,
       imagem: capitao
     },
     {
       nome: "Falcão",
+      /*
       habilidades: {
         forcaFisica: 70,
         velocidade: 90,
@@ -40,10 +51,20 @@ export const timeCapitaoAmerica = [
         poderesEspeciais: 50,
         nivelExperiencia: 70,
       },
+      */
+      forcaFisica: 70,
+      velocidade: 90,
+      agilidade: 90,
+      resistencia: 80,
+      inteligencia: 60,
+      habilidadeCombate: 80,
+      poderesEspeciais: 50,
+      nivelExperiencia: 70,
       imagem: falcao
     },
     {
       nome: "Soldado Invernal",
+      /*
       habilidades: {
         forcaFisica: 90,
         velocidade: 70,
@@ -54,10 +75,20 @@ export const timeCapitaoAmerica = [
         poderesEspeciais: 70,
         nivelExperiencia: 90,
       },
+      */
+      forcaFisica: 90,
+      velocidade: 70,
+      agilidade: 70,
+      resistencia: 90,
+      inteligencia: 60,
+      habilidadeCombate: 90,
+      poderesEspeciais: 70,
+      nivelExperiencia: 90,
       imagem: invernal
     },
     {
       nome: "Homem-Formiga",
+      /*
       habilidades: {
         forcaFisica: 75,
         velocidade: 70,
@@ -68,10 +99,20 @@ export const timeCapitaoAmerica = [
         poderesEspeciais: 75,
         nivelExperiencia: 60,
       },
+      */
+      forcaFisica: 75,
+      velocidade: 70,
+      agilidade: 80,
+      resistencia: 70,
+      inteligencia: 80,
+      habilidadeCombate: 70,
+      poderesEspeciais: 75,
+      nivelExperiencia: 60,
       imagem: formiga
     },
     {
       nome: "Gavião Arqueiro",
+      /*
       habilidades: {
         forcaFisica: 75,
         velocidade: 60,
@@ -82,10 +123,20 @@ export const timeCapitaoAmerica = [
         poderesEspeciais: 60,
         nivelExperiencia: 80,
       },
+      */
+      forcaFisica: 75,
+      velocidade: 60,
+      agilidade: 70,
+      resistencia: 80,
+      inteligencia: 60,
+      habilidadeCombate: 80,
+      poderesEspeciais: 60,
+      nivelExperiencia: 80,
       imagem: arqueiro
     },
     {
       nome: "Feiticeira Escarlate",
+      /*
       habilidades: {
         forcaFisica: 70,
         velocidade: 60,
@@ -96,6 +147,15 @@ export const timeCapitaoAmerica = [
         poderesEspeciais: 95,
         nivelExperiencia: 70,
       },
+      */
+      forcaFisica: 70,
+      velocidade: 60,
+      agilidade: 70,
+      resistencia: 70,
+      inteligencia: 90,
+      habilidadeCombate: 70,
+      poderesEspeciais: 95,
+      nivelExperiencia: 70,
       imagem: feiticeira
     },
 ];
@@ -174,3 +234,10 @@ export const timeHomemDeFerro = [
       imagem: aranha
     }
 ];  
+
+<div className='timeselecionado'>
+  <img className='timeazulpersonagemselecionado' 
+    src={timeTerceiro && timeTerceiro.length > 0 ? timeTerceiro[0].imagem : ''} 
+    alt={personagemSelecionado ? personagemSelecionado.nome : ''}
+  />
+</div>
