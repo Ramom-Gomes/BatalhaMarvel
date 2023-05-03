@@ -235,9 +235,11 @@ export const timeHomemDeFerro = [
     }
 ];  
 
+/*
 <div className='timeselecionado'>
   <img className='timeazulpersonagemselecionado' 
     src={timeTerceiro && timeTerceiro.length > 0 ? timeTerceiro[0].imagem : ''} 
     alt={personagemSelecionado ? personagemSelecionado.nome : ''}
   />
 </div>
+*/
