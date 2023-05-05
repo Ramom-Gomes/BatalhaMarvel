@@ -236,10 +236,32 @@ export const timeHomemDeFerro = [
 ];  
 
 /*
+fazer a média do personagem
 personagens.forEach(function(personagem) {
   const somaPropriedades = personagem.forcaFisica + personagem.velocidade + personagem.agilidade;
   personagem.mediaGeral = somaPropriedades / 3;
 });
 
 console.log(personagens);
+*/
+
+/*
+remover personagem do array
+function removerDoTimeHomemDeFerro(personagem) {
+  const index = timeHomemDeFerroEscolhidos.indexOf(personagem);
+  if (index !== -1) {
+    const novoTimeHomemDeFerro = [...timeHomemDeFerroEscolhidos];
+    novoTimeHomemDeFerro.splice(index, 1);
+    setTimeHomemDeFerroEscolhidos(novoTimeHomemDeFerro);
+  }
+}
+*/
+
+/*
+outra forma de remover personagem do array
+function removerDoTimeHomemDeFerro(personagem) {
+  setTimeHomemDeFerroEscolhidos(prevTimeHomemDeFerro =>
+    prevTimeHomemDeFerro.filter(p => p !== personagem)
+  );
+}
 */
