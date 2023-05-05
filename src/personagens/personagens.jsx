@@ -171,6 +171,7 @@ export const timeHomemDeFerro = [
       habilidadeCombate: 90,
       poderesEspeciais: 85,
       nivelExperiencia: 90,
+      mediaGeral: 82,
       imagem: ferro
     },
     {
@@ -183,6 +184,7 @@ export const timeHomemDeFerro = [
       habilidadeCombate: 80,
       poderesEspeciais: 75,
       nivelExperiencia: 85,
+      mediaGeral: 73,
       imagem: maquina
     },
     {
@@ -195,6 +197,7 @@ export const timeHomemDeFerro = [
       habilidadeCombate: 95,
       poderesEspeciais: 75,
       nivelExperiencia: 90,
+      mediaGeral: 79,
       imagem: viuva
     },
     {
@@ -207,6 +210,7 @@ export const timeHomemDeFerro = [
       habilidadeCombate: 95,
       poderesEspeciais: 80,
       nivelExperiencia: 95,
+      mediaGeral: 87,
       imagem: pantera
     },
     {
@@ -219,6 +223,7 @@ export const timeHomemDeFerro = [
       habilidadeCombate: 85,
       poderesEspeciais: 95,
       nivelExperiencia: 85,
+      mediaGeral: 84,
       imagem: visao
     },
     {
@@ -231,6 +236,7 @@ export const timeHomemDeFerro = [
       habilidadeCombate: 85,
       poderesEspeciais: 80,
       nivelExperiencia: 80,
+      mediaGeral: 81,
       imagem: aranha
     }
 ];  
@@ -245,23 +251,15 @@ personagens.forEach(function(personagem) {
 console.log(personagens);
 */
 
-/*
-remover personagem do array
-function removerDoTimeHomemDeFerro(personagem) {
-  const index = timeHomemDeFerroEscolhidos.indexOf(personagem);
-  if (index !== -1) {
-    const novoTimeHomemDeFerro = [...timeHomemDeFerroEscolhidos];
-    novoTimeHomemDeFerro.splice(index, 1);
-    setTimeHomemDeFerroEscolhidos(novoTimeHomemDeFerro);
+const timeHomemDeFerroComMedia = timeHomemDeFerro.map(personagem => {
+  const { nome, imagem, ...outrasPropriedades } = personagem;
+  const somaPropriedades = Object.values(outrasPropriedades).reduce((acc, valor) => acc + valor, 0);
+  const mediaGeral = (somaPropriedades / Object.values(outrasPropriedades).length).toFixed(0);
+  return {
+    nome,
+    ...outrasPropriedades,
+    mediaGeral
   }
-}
-*/
+});
 
-/*
-outra forma de remover personagem do array
-function removerDoTimeHomemDeFerro(personagem) {
-  setTimeHomemDeFerroEscolhidos(prevTimeHomemDeFerro =>
-    prevTimeHomemDeFerro.filter(p => p !== personagem)
-  );
-}
-*/
+console.log(timeHomemDeFerroComMedia);

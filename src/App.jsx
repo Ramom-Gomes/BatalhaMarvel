@@ -6,20 +6,30 @@ function App() {
 
   const [personagemSelecionado, setPersonagemSelecionado] = useState(null);
   const [personagemSelecionado2, setPersonagemSelecionado2] = useState(null);
-  const [timeTerceiro, setTimeTerceiro] = useState([]);
+  const [timeCapitaoEscolhidos, setTimeCapitaoEscolhidos] = useState([]);
   const [timeHomemDeFerroEscolhidos, setTimeHomemDeFerroEscolhidos] = useState([]);
 
-  function adicionarAoTerceiro(personagem) {
-    if (timeTerceiro.length < 3) {
-      setTimeTerceiro(prevTimeTerceiro => [...prevTimeTerceiro, personagem]);
-    }
+  function adicionarOuRemoverDoTimeCapitao(personagem) {
+    const novoTimeCapitaoEscolhidos = timeCapitaoEscolhidos.includes(personagem)
+      ? timeCapitaoEscolhidos.filter(item => item !== personagem)
+      : timeCapitaoEscolhidos.length < 3
+        ? [...timeCapitaoEscolhidos, personagem]
+        : timeCapitaoEscolhidos;
+  
+    setTimeCapitaoEscolhidos(novoTimeCapitaoEscolhidos);
   }
 
-  function adicionarAoTimeHomemDeFerro(personagem) {
-    if (timeHomemDeFerroEscolhidos.length < 3) {
-      setTimeHomemDeFerroEscolhidos(prevTimeHomemDeFerro => [...prevTimeHomemDeFerro, personagem]);
-    }
+
+  function adicionarOuRemoverDoTimeHomemDeFerro(personagem) {
+    const novoTimeHomemDeFerro = timeHomemDeFerroEscolhidos.includes(personagem)
+      ? timeHomemDeFerroEscolhidos.filter(item => item !== personagem)
+      : timeHomemDeFerroEscolhidos.length < 3
+        ? [...timeHomemDeFerroEscolhidos, personagem]
+        : timeHomemDeFerroEscolhidos;
+  
+    setTimeHomemDeFerroEscolhidos(novoTimeHomemDeFerro);
   }
+  
 
 
   return (
@@ -76,7 +86,7 @@ function App() {
                 src={personagem.imagem} 
                 alt={personagem.nome}
                 onMouseEnter={() => setPersonagemSelecionado(personagem)}
-                onClick={() => adicionarAoTerceiro(personagem)} 
+                onClick={() => adicionarOuRemoverDoTimeCapitao(personagem)} 
                 />
               ))}
             </div>
@@ -85,15 +95,15 @@ function App() {
             <h1 className='timeazulescolhidostitulo'>escolhidos</h1>
             <div className='timeazulescolhidos'>
             <img className='timeazulescolhidosposicao' 
-              src={timeTerceiro && timeTerceiro.length > 0 ? timeTerceiro[0].imagem : ''} 
+              src={timeCapitaoEscolhidos && timeCapitaoEscolhidos.length > 0 ? timeCapitaoEscolhidos[0].imagem : ''} 
               alt={personagemSelecionado ? personagemSelecionado.nome : ''}
             />
               <img className='timeazulescolhidosposicao' 
-              src={timeTerceiro && timeTerceiro.length > 1 ? timeTerceiro[1].imagem : ''} 
+              src={timeCapitaoEscolhidos && timeCapitaoEscolhidos.length > 1 ? timeCapitaoEscolhidos[1].imagem : ''} 
               alt={personagemSelecionado ? personagemSelecionado.nome : ''}
             />
               <img className='timeazulescolhidosposicao2' 
-              src={timeTerceiro && timeTerceiro.length > 2 ? timeTerceiro[2].imagem : ''} 
+              src={timeCapitaoEscolhidos && timeCapitaoEscolhidos.length > 2 ? timeCapitaoEscolhidos[2].imagem : ''} 
               alt={personagemSelecionado ? personagemSelecionado.nome : ''}
             />
             </div>
@@ -113,7 +123,7 @@ function App() {
                 src={personagem.imagem} 
                 alt={personagem.nome}
                 onMouseEnter={() => setPersonagemSelecionado2(personagem)}
-                onClick={() => adicionarAoTimeHomemDeFerro(personagem)}
+                onClick={() => adicionarOuRemoverDoTimeHomemDeFerro(personagem)}
                 />
               ))}
             </div>
