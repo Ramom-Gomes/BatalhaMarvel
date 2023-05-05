@@ -16,146 +16,80 @@ import aranha from '../images/aranha.jpg';
 export const timeCapitaoAmerica = [
     {
       nome: "Capitão América",
-      /*
-      habilidades: {
-        forcaFisica: 95,
-        velocidade: 60,
-        agilidade: 60,
-        resistencia: 90,
-        inteligencia: 70,
-        habilidadeCombate: 100,
-        poderesEspeciais: 70,
-        nivelExperiencia: 95,
-      },
-      */
       forcaFisica: 95,
       velocidade: 60,
       agilidade: 60,
       resistencia: 90,
       inteligencia: 70,
-      habilidadeCombate: 100,
-      poderesEspeciais: 70,
-      nivelExperiencia: 95,
+      coragem: 90,
+      habilidade: 75,
+      Experiencia: 95,
+      mediaGeral: 79,
       imagem: capitao
     },
     {
       nome: "Falcão",
-      /*
-      habilidades: {
-        forcaFisica: 70,
-        velocidade: 90,
-        agilidade: 90,
-        resistencia: 80,
-        inteligencia: 60,
-        habilidadeCombate: 80,
-        poderesEspeciais: 50,
-        nivelExperiencia: 70,
-      },
-      */
       forcaFisica: 70,
       velocidade: 90,
       agilidade: 90,
       resistencia: 80,
       inteligencia: 60,
-      habilidadeCombate: 80,
-      poderesEspeciais: 50,
-      nivelExperiencia: 70,
+      coragem: 85,
+      habilidade: 80,
+      Experiencia: 70,
+      mediaGeral: 78,
       imagem: falcao
     },
     {
       nome: "Soldado Invernal",
-      /*
-      habilidades: {
-        forcaFisica: 90,
-        velocidade: 70,
-        agilidade: 70,
-        resistencia: 90,
-        inteligencia: 60,
-        habilidadeCombate: 90,
-        poderesEspeciais: 70,
-        nivelExperiencia: 90,
-      },
-      */
       forcaFisica: 90,
       velocidade: 70,
       agilidade: 70,
       resistencia: 90,
       inteligencia: 60,
-      habilidadeCombate: 90,
-      poderesEspeciais: 70,
-      nivelExperiencia: 90,
+      coragem: 90,
+      habilidade: 70,
+      Experiencia: 90,
+      mediaGeral: 79,
       imagem: invernal
     },
     {
       nome: "Homem-Formiga",
-      /*
-      habilidades: {
-        forcaFisica: 75,
-        velocidade: 70,
-        agilidade: 80,
-        resistencia: 70,
-        inteligencia: 80,
-        habilidadeCombate: 70,
-        poderesEspeciais: 75,
-        nivelExperiencia: 60,
-      },
-      */
       forcaFisica: 75,
       velocidade: 70,
       agilidade: 80,
       resistencia: 70,
       inteligencia: 80,
-      habilidadeCombate: 70,
-      poderesEspeciais: 75,
-      nivelExperiencia: 60,
+      coragem: 70,
+      habilidade: 75,
+      Experiencia: 60,
+      mediaGeral: 73,
       imagem: formiga
     },
     {
       nome: "Gavião Arqueiro",
-      /*
-      habilidades: {
-        forcaFisica: 75,
-        velocidade: 60,
-        agilidade: 70,
-        resistencia: 80,
-        inteligencia: 60,
-        habilidadeCombate: 80,
-        poderesEspeciais: 60,
-        nivelExperiencia: 80,
-      },
-      */
       forcaFisica: 75,
       velocidade: 60,
       agilidade: 70,
       resistencia: 80,
       inteligencia: 60,
-      habilidadeCombate: 80,
-      poderesEspeciais: 60,
-      nivelExperiencia: 80,
+      coragem: 80,
+      habilidade: 75,
+      Experiencia: 80,
+      mediaGeral: 72,
       imagem: arqueiro
     },
     {
       nome: "Feiticeira Escarlate",
-      /*
-      habilidades: {
-        forcaFisica: 70,
-        velocidade: 60,
-        agilidade: 70,
-        resistencia: 70,
-        inteligencia: 90,
-        habilidadeCombate: 70,
-        poderesEspeciais: 95,
-        nivelExperiencia: 70,
-      },
-      */
       forcaFisica: 70,
       velocidade: 60,
       agilidade: 70,
       resistencia: 70,
       inteligencia: 90,
-      habilidadeCombate: 70,
-      poderesEspeciais: 95,
-      nivelExperiencia: 70,
+      coragem: 80,
+      habilidade: 95,
+      Experiencia: 70,
+      mediaGeral: 75,
       imagem: feiticeira
     },
 ];
@@ -168,10 +102,10 @@ export const timeHomemDeFerro = [
       agilidade: 70,
       resistencia: 80,
       inteligencia: 100,
-      habilidadeCombate: 90,
-      poderesEspeciais: 85,
-      nivelExperiencia: 90,
-      mediaGeral: 82,
+      coragem: 60,
+      habilidade: 90,
+      Experiencia: 90,
+      mediaGeral: 79,
       imagem: ferro
     },
     {
@@ -181,9 +115,9 @@ export const timeHomemDeFerro = [
       agilidade: 60,
       resistencia: 80,
       inteligencia: 80,
-      habilidadeCombate: 80,
-      poderesEspeciais: 75,
-      nivelExperiencia: 85,
+      coragem: 80,
+      habilidade: 70,
+      Experiencia: 85,
       mediaGeral: 73,
       imagem: maquina
     },
@@ -194,9 +128,9 @@ export const timeHomemDeFerro = [
       agilidade: 90,
       resistencia: 70,
       inteligencia: 80,
-      habilidadeCombate: 95,
-      poderesEspeciais: 75,
-      nivelExperiencia: 90,
+      coragem: 80,
+      habilidade: 90,
+      Experiencia: 90,
       mediaGeral: 79,
       imagem: viuva
     },
@@ -207,10 +141,10 @@ export const timeHomemDeFerro = [
       agilidade: 90,
       resistencia: 85,
       inteligencia: 80,
-      habilidadeCombate: 95,
-      poderesEspeciais: 80,
-      nivelExperiencia: 95,
-      mediaGeral: 87,
+      coragem: 95,
+      habilidade: 90,
+      Experiencia: 95,
+      mediaGeral: 88,
       imagem: pantera
     },
     {
@@ -220,10 +154,10 @@ export const timeHomemDeFerro = [
       agilidade: 80,
       resistencia: 80,
       inteligencia: 100,
-      habilidadeCombate: 85,
-      poderesEspeciais: 95,
-      nivelExperiencia: 85,
-      mediaGeral: 84,
+      coragem: 80,
+      habilidade: 90,
+      Experiencia: 85,
+      mediaGeral: 83,
       imagem: visao
     },
     {
@@ -233,33 +167,10 @@ export const timeHomemDeFerro = [
       agilidade: 95,
       resistencia: 70,
       inteligencia: 80,
-      habilidadeCombate: 85,
-      poderesEspeciais: 80,
-      nivelExperiencia: 80,
-      mediaGeral: 81,
+      coragem: 90,
+      habilidade: 85,
+      Experiencia: 80,
+      mediaGeral: 82,
       imagem: aranha
     }
 ];  
-
-/*
-fazer a média do personagem
-personagens.forEach(function(personagem) {
-  const somaPropriedades = personagem.forcaFisica + personagem.velocidade + personagem.agilidade;
-  personagem.mediaGeral = somaPropriedades / 3;
-});
-
-console.log(personagens);
-*/
-
-const timeHomemDeFerroComMedia = timeHomemDeFerro.map(personagem => {
-  const { nome, imagem, ...outrasPropriedades } = personagem;
-  const somaPropriedades = Object.values(outrasPropriedades).reduce((acc, valor) => acc + valor, 0);
-  const mediaGeral = (somaPropriedades / Object.values(outrasPropriedades).length).toFixed(0);
-  return {
-    nome,
-    ...outrasPropriedades,
-    mediaGeral
-  }
-});
-
-console.log(timeHomemDeFerroComMedia);

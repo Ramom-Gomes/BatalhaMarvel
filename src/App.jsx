@@ -48,26 +48,26 @@ function App() {
             <div className='personagenscaracteristicas'>
               {personagemSelecionado && (
                 <>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força fisíca</p><p>{personagemSelecionado.forcaFisica}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força</p><p>{personagemSelecionado.forcaFisica}</p></div>
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>velocidade</p><p>{personagemSelecionado.velocidade}</p></div>
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>agilidade</p><p>{personagemSelecionado.agilidade}</p></div>
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>resistência</p><p>{personagemSelecionado.resistencia}</p></div>
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>inteligência</p><p>{personagemSelecionado.inteligencia}</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>habilidade de combate</p><p>{personagemSelecionado.habilidadeCombate}</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>poderes especiais</p><p>{personagemSelecionado.poderesEspeciais}</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>nivel experiência</p><p>{personagemSelecionado.nivelExperiencia}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>coragem</p><p>{personagemSelecionado.coragem}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>habilidades</p><p>{personagemSelecionado.habilidade}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>experiência</p><p>{personagemSelecionado.Experiencia}</p></div>
                 </>
               )}
               {!personagemSelecionado && (
                 <>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força fisíca</p><p>5</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força</p><p>5</p></div>
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>velocidade</p><p>5</p></div>
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>agilidade</p><p>5</p></div>
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>resistência</p><p>5</p></div>
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>inteligência</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>habilidade de combate</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>poderes especiais</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>nível experiência</p><p>5</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>coragem</p><p>5</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>habilidades</p><p>5</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>experiência</p><p>5</p></div>
                 </>
               )}
               <div className='personagenscaracteristicaespecifica2'><p>Poder total</p><p>5</p></div>
@@ -164,9 +164,9 @@ function App() {
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>agilidade</p><p>{personagemSelecionado2.agilidade}</p></div>
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>resistência</p><p>{personagemSelecionado2.resistencia}</p></div>
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>inteligência</p><p>{personagemSelecionado2.inteligencia}</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>habilidade de combate</p><p>{personagemSelecionado2.habilidadeCombate}</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>poderes especiais</p><p>{personagemSelecionado2.poderesEspeciais}</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>nivel experiência</p><p>{personagemSelecionado2.nivelExperiencia}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>coragem</p><p>{personagemSelecionado2.coragem}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>habilidades</p><p>{personagemSelecionado2.habilidade}</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>experiência</p><p>{personagemSelecionado2.Experiencia}</p></div>
                 </>
               )}
               {!personagemSelecionado2 && (
@@ -176,9 +176,9 @@ function App() {
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>agilidade</p><p>5</p></div>
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>resistência</p><p>5</p></div>
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>inteligência</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>habilidade de combate</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>poderes especiais</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>nível experiência</p><p>5</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>coragem</p><p>5</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>habilidades</p><p>5</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>experiência</p><p>5</p></div>
                 </>
               )}
               <div className='personagenscaracteristicaespecifica2'><p>Poder total</p><p>5</p></div>
