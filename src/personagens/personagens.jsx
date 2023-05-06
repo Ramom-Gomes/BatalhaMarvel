@@ -176,6 +176,8 @@ export const timeHomemDeFerro = [
 ];  
 
 /*
+verificando se tem alguma personagem escolhido
+
 function adicionarOuRemoverDoTimeCapitao(personagem) {
   const novoTimeCapitaoEscolhidos = timeCapitaoEscolhidos.includes(personagem)
     ? timeCapitaoEscolhidos.filter(item => item !== personagem)
@@ -204,5 +206,29 @@ function adicionarOuRemoverDoTimeHomemDeFerro(personagem) {
 
 
 <button disabled={!ambosTimesSelecionados}>Lutar!</button>
+*/
 
+/*
+calculando média dos times
+
+function calcularMediaDoTime(time) {
+  const somatorio = time.reduce((acumulador, personagem) => {
+    return acumulador + personagem.media;
+  }, 0);
+  const media = somatorio / time.length;
+  return media;
+}
+
+function handleLutarClick() {
+  const mediaCapitao = calcularMediaDoTime(timeCapitaoEscolhidos);
+  const mediaHomemDeFerro = calcularMediaDoTime(timeHomemDeFerroEscolhidos);
+  
+  if (mediaCapitao > mediaHomemDeFerro) {
+    alert("O Time do Capitão venceu a batalha!");
+  } else if (mediaHomemDeFerro > mediaCapitao) {
+    alert("O Time do Homem de Ferro venceu a batalha!");
+  } else {
+    alert("A batalha terminou em empate!");
+  }
+}
 */
