@@ -174,3 +174,35 @@ export const timeHomemDeFerro = [
       imagem: aranha
     }
 ];  
+
+/*
+function adicionarOuRemoverDoTimeCapitao(personagem) {
+  const novoTimeCapitaoEscolhidos = timeCapitaoEscolhidos.includes(personagem)
+    ? timeCapitaoEscolhidos.filter(item => item !== personagem)
+    : timeCapitaoEscolhidos.length < 3
+      ? [...timeCapitaoEscolhidos, personagem]
+      : timeCapitaoEscolhidos;
+
+  setTimeCapitaoEscolhidos(novoTimeCapitaoEscolhidos);
+  setAmbosTimesSelecionados(
+    novoTimeCapitaoEscolhidos.length > 0 && timeHomemDeFerroEscolhidos.length > 0
+  );
+}
+
+function adicionarOuRemoverDoTimeHomemDeFerro(personagem) {
+  const novoTimeHomemDeFerro = timeHomemDeFerroEscolhidos.includes(personagem)
+    ? timeHomemDeFerroEscolhidos.filter(item => item !== personagem)
+    : timeHomemDeFerroEscolhidos.length < 3
+      ? [...timeHomemDeFerroEscolhidos, personagem]
+      : timeHomemDeFerroEscolhidos;
+
+  setTimeHomemDeFerroEscolhidos(novoTimeHomemDeFerro);
+  setAmbosTimesSelecionados(
+    timeCapitaoEscolhidos.length > 0 && novoTimeHomemDeFerro.length > 0
+  );
+}
+
+
+<button disabled={!ambosTimesSelecionados}>Lutar!</button>
+
+*/
