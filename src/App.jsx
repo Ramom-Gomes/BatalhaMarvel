@@ -8,6 +8,8 @@ function App() {
   const [personagemSelecionado2, setPersonagemSelecionado2] = useState(null);
   const [timeCapitaoEscolhidos, setTimeCapitaoEscolhidos] = useState([]);
   const [timeHomemDeFerroEscolhidos, setTimeHomemDeFerroEscolhidos] = useState([]);
+  const [ambosTimesSelecionados, setAmbosTimesSelecionados] = useState(false);
+
 
   function adicionarOuRemoverDoTimeCapitao(personagem) {
     const novoTimeCapitaoEscolhidos = timeCapitaoEscolhidos.includes(personagem)
@@ -17,6 +19,9 @@ function App() {
         : timeCapitaoEscolhidos;
   
     setTimeCapitaoEscolhidos(novoTimeCapitaoEscolhidos);
+    setAmbosTimesSelecionados(
+      novoTimeCapitaoEscolhidos.length > 0 && timeHomemDeFerroEscolhidos.length > 0
+    );
   }
 
 
@@ -28,9 +33,31 @@ function App() {
         : timeHomemDeFerroEscolhidos;
   
     setTimeHomemDeFerroEscolhidos(novoTimeHomemDeFerro);
+    setAmbosTimesSelecionados(
+      timeCapitaoEscolhidos.length > 0 && novoTimeHomemDeFerro.length > 0
+    );
   }
 
-  
+  function calcularMediaDoTime(time) {
+    const somatorio = time.reduce((acumulador, personagem) => {
+      return acumulador + personagem.mediaGeral;
+    }, 0);
+    const media = somatorio / time.length;
+    return media;
+  }
+
+  function handleLutarClick() {
+    const mediaCapitao = calcularMediaDoTime(timeCapitaoEscolhidos);
+    const mediaHomemDeFerro = calcularMediaDoTime(timeHomemDeFerroEscolhidos);
+    
+    if (mediaCapitao > mediaHomemDeFerro) {
+      alert("O Time do Capitão venceu a batalha!");
+    } else if (mediaHomemDeFerro > mediaCapitao) {
+      alert("O Time do Homem de Ferro venceu a batalha!");
+    } else {
+      alert("A batalha terminou em empate!");
+    }
+  }
   
 
 
@@ -189,6 +216,7 @@ function App() {
             </div>
           </div>
         </div>
+        <button disabled={!ambosTimesSelecionados} onClick={handleLutarClick}>lutar</button>
       </section>
     </main>
   )
