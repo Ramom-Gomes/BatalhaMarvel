@@ -29,6 +29,8 @@ function App() {
   
     setTimeHomemDeFerroEscolhidos(novoTimeHomemDeFerro);
   }
+
+  
   
 
 
@@ -56,6 +58,7 @@ function App() {
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>coragem</p><p>{personagemSelecionado.coragem}</p></div>
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>habilidades</p><p>{personagemSelecionado.habilidade}</p></div>
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>experiência</p><p>{personagemSelecionado.Experiencia}</p></div>
+                  <div className='personagenscaracteristicaespecifica2'><p>Poder total</p><p>{personagemSelecionado.mediaGeral}</p></div>
                 </>
               )}
               {!personagemSelecionado && (
@@ -68,9 +71,9 @@ function App() {
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>coragem</p><p>5</p></div>
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>habilidades</p><p>5</p></div>
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>experiência</p><p>5</p></div>
+                  <div className='personagenscaracteristicaespecifica2'><p>Poder total</p><p>5</p></div>
                 </>
               )}
-              <div className='personagenscaracteristicaespecifica2'><p>Poder total</p><p>5</p></div>
             </div>
           </div>
         </div>
@@ -167,6 +170,7 @@ function App() {
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>coragem</p><p>{personagemSelecionado2.coragem}</p></div>
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>habilidades</p><p>{personagemSelecionado2.habilidade}</p></div>
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>experiência</p><p>{personagemSelecionado2.Experiencia}</p></div>
+                  <div className='personagenscaracteristicaespecifica2'><p>Poder total</p><p>{personagemSelecionado2.mediaGeral}</p></div>
                 </>
               )}
               {!personagemSelecionado2 && (
@@ -179,9 +183,9 @@ function App() {
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>coragem</p><p>5</p></div>
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>habilidades</p><p>5</p></div>
                   <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>experiência</p><p>5</p></div>
+                  <div className='personagenscaracteristicaespecifica2'><p>Poder total</p><p>5</p></div>
                 </>
               )}
-              <div className='personagenscaracteristicaespecifica2'><p>Poder total</p><p>5</p></div>
             </div>
           </div>
         </div>
