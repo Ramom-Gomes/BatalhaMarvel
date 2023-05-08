@@ -51,9 +51,9 @@ function App() {
     const mediaHomemDeFerro = calcularMediaDoTime(timeHomemDeFerroEscolhidos);
     
     if (mediaCapitao > mediaHomemDeFerro) {
-      alert("O Time do Capitão venceu a batalha!");
+      alert(`O Time do Capitão venceu a batalha! Média: ${mediaCapitao.toFixed(0)}`);
     } else if (mediaHomemDeFerro > mediaCapitao) {
-      alert("O Time do Homem de Ferro venceu a batalha!");
+      alert(`O Time do Homem de Ferro venceu a batalha! Média: ${mediaHomemDeFerro.toFixed(0)}`);
     } else {
       alert("A batalha terminou em empate!");
     }
