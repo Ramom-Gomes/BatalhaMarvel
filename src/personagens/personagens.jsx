@@ -177,6 +177,5 @@ export const timeHomemDeFerro = [
 
 /*
   <button disabled={!ambosTimesSelecionados} onClick={handleLutarClick}>lutar</button>
-  
   ola
 */
