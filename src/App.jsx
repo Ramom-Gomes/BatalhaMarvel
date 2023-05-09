@@ -65,12 +65,12 @@ function App() {
     <main className='main'>
       <section className='timeazul'>
         <div className='timeazulcaracteristicas'>
-          <div>
+          <div className='personagemnomeposicao'>
             {personagemSelecionado && (
               <h1 className='personagemnome'>{personagemSelecionado.nome}</h1>
             )}
             {!personagemSelecionado && (
-              <h1 className='personagemnome'>nome personagem</h1>
+              <h1 className='personagemnome'>personagem</h1>
             )}
           </div>
           <div className='personagenscaracteristicasfundo'>
@@ -90,15 +90,15 @@ function App() {
               )}
               {!personagemSelecionado && (
                 <>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>velocidade</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>agilidade</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>resistência</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>inteligência</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>coragem</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>habilidades</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>experiência</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica2'><p>Poder total</p><p>5</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força</p><p>00</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>velocidade</p><p>00</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>agilidade</p><p>00</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>resistência</p><p>00</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>inteligência</p><p>00</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>coragem</p><p>00</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>habilidades</p><p>00</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>experiência</p><p>00</p></div>
+                  <div className='personagenscaracteristicaespecifica2'><p>Poder total</p><p>00</p></div>
                 </>
               )}
             </div>
@@ -177,12 +177,12 @@ function App() {
           </div>
         </div>
         <div className='timevermelhocaracteristicas'>
-          <div>
+          <div className='personagemnomeposicao2'>
             {personagemSelecionado2 && (
               <h1 className='personagemnome'>{personagemSelecionado2.nome}</h1>
             )}
             {!personagemSelecionado2 && (
-              <h1 className='personagemnome'>nome personagem</h1>
+              <h1 className='personagemnome'>personagem</h1>
             )}
           </div>
           <div className='personagenscaracteristicasfundo'>
@@ -202,15 +202,15 @@ function App() {
               )}
               {!personagemSelecionado2 && (
                 <>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força fisíca</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>velocidade</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>agilidade</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>resistência</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>inteligência</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>coragem</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>habilidades</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>experiência</p><p>5</p></div>
-                  <div className='personagenscaracteristicaespecifica2'><p>Poder total</p><p>5</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>força fisíca</p><p>00</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>velocidade</p><p>00</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>agilidade</p><p>00</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>resistência</p><p>00</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>inteligência</p><p>00</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>coragem</p><p>00</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>habilidades</p><p>00</p></div>
+                  <div className='personagenscaracteristicaespecifica'><p className='personagemcaracteristicatitulo'>experiência</p><p>00</p></div>
+                  <div className='personagenscaracteristicaespecifica2'><p>Poder total</p><p>00</p></div>
                 </>
               )}
             </div>

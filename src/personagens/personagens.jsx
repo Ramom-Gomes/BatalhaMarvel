@@ -101,7 +101,7 @@ export const timeHomemDeFerro = [
       velocidade: 60,
       agilidade: 70,
       resistencia: 80,
-      inteligencia: 100,
+      inteligencia: 99,
       coragem: 60,
       habilidade: 90,
       Experiencia: 90,
@@ -153,7 +153,7 @@ export const timeHomemDeFerro = [
       velocidade: 70,
       agilidade: 80,
       resistencia: 80,
-      inteligencia: 100,
+      inteligencia: 99,
       coragem: 80,
       habilidade: 90,
       Experiencia: 85,
@@ -177,5 +177,4 @@ export const timeHomemDeFerro = [
 
 /*
   <button disabled={!ambosTimesSelecionados} onClick={handleLutarClick}>lutar</button>
-  ola
 */
