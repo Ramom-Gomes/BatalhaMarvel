@@ -16,7 +16,7 @@
 
 .timeazulcaracteristicas, .timevermelhocaracteristicas {
     margin-top: 110px;
-    margin-bottom: 90px;
+    margin-bottom: 8px;
 }
 
 .personagemnomeposicao {
@@ -137,4 +137,11 @@
 .personagemvermelhonome {
     font-size: 25px;
     margin-left: 20px;
+}
+
+.botaolutar {
+    width: 80px;
+    height: 50px;
+    margin-left: -500px;
+    border-radius: 5px;
 }

@@ -174,7 +174,3 @@ export const timeHomemDeFerro = [
       imagem: aranha
     }
 ];  
-
-/*
-  <button disabled={!ambosTimesSelecionados} onClick={handleLutarClick}>lutar</button>
-*/
