@@ -217,6 +217,7 @@ function App() {
               </div>
             </div>
             <button className='botaolutar' disabled={!ambosTimesSelecionados} onClick={handleLutarClick}>lutar</button>
+            <button className='botaolutar' disabled={!ambosTimesSelecionados} onClick={handleLutarClick}>lutar</button>
           </div>
         </section>
       </main>
