@@ -9,7 +9,9 @@ function App() {
   const [timeCapitaoEscolhidos, setTimeCapitaoEscolhidos] = useState([]);
   const [timeHomemDeFerroEscolhidos, setTimeHomemDeFerroEscolhidos] = useState([]);
   const [ambosTimesSelecionados, setAmbosTimesSelecionados] = useState(false);
-
+  const [mensagemVisivel, setMensagemVisivel] = useState(false);
+  const [resultadoVisivel, setResultadoVisivel] = useState(false);
+ 
 
   function adicionarOuRemoverDoTimeCapitao(personagem) {
     const novoTimeCapitaoEscolhidos = timeCapitaoEscolhidos.includes(personagem)
@@ -50,15 +52,22 @@ function App() {
     const mediaCapitao = calcularMediaDoTime(timeCapitaoEscolhidos);
     const mediaHomemDeFerro = calcularMediaDoTime(timeHomemDeFerroEscolhidos);
     
+    let resultado = "";
     if (mediaCapitao > mediaHomemDeFerro) {
-      alert(`O Time do Capitão venceu a batalha! Média: ${mediaCapitao.toFixed(0)}`);
+      resultado = `O Time do Capitão venceu a batalha! Média: ${mediaCapitao.toFixed(0)}`;
     } else if (mediaHomemDeFerro > mediaCapitao) {
-      alert(`O Time do Homem de Ferro venceu a batalha! Média: ${mediaHomemDeFerro.toFixed(0)}`);
+      resultado = `O Time do Homem de Ferro venceu a batalha! Média: ${mediaHomemDeFerro.toFixed(0)}`;
     } else {
-      alert("A batalha terminou em empate!");
+      resultado = "A batalha terminou em empate!";
     }
+
+    setResultadoVisivel(resultado);
+    setMensagemVisivel(true);
   }
   
+  function handleFecharResultado() {
+    setResultadoVisivel(false);
+  }
 
 
   return (
@@ -217,6 +226,13 @@ function App() {
               </div>
             </div>
             <button className='botaolutar' disabled={!ambosTimesSelecionados} onClick={handleLutarClick}>lutar</button>
+            {mensagemVisivel && (
+                <div className="caixa-mensagem">
+                  <p>{resultadoVisivel}</p>
+                  <button className='botaofecharresultado' onClick={handleFecharResultado}>fechar</button>
+                </div>
+            )}
+            {resultadoVisivel && <div className="fundo-transparente"/>}
           </div>
         </section>
       </main>
