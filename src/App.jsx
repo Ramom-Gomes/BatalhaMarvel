@@ -230,6 +230,8 @@ function App() {
                 <div className="caixa-mensagem">
                   <p>{resultadoVisivel}</p>
                   <div>...</div>
+                  <div>...</div>
+                  <div>...</div>
                   <button className='botaofecharresultado' onClick={handleFecharResultado}>fechar</button>
                 </div>
             )}
