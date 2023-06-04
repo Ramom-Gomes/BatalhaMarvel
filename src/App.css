@@ -6,12 +6,17 @@
 
 .main {
     display: flex;
+    background-image: url(./images/fotofilme.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .timeazul {
     flex: 1;
-    background-color: blue;
     display: flex;
+    background-color: #4169E1;
+    opacity: 0.9;
 }
 
 .timeazulcaracteristicas, .timevermelhocaracteristicas {
@@ -106,19 +111,20 @@
     margin-right: 20px;
     width: 100px;
     height: 100px;
-    background-color: black;
+    border: 1px solid black;
 }
 
 .timeazulescolhidosposicao2, .timevermelhoescolhidosposicao2 {
     width: 100px;
     height: 100px;
-    background-color: black;
+    border: 1px solid black;
 }
 
 .timevermelho {
-    background-color: red;
     flex: 1;
     display: flex;
+    background-color: #B22222;
+    opacity: 0.9;
 }
 
 .timevermelhopersonagens {

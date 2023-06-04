@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import {timeCapitaoAmerica, timeHomemDeFerro} from "./personagens/personagens";
+import FotoInterrogacao from "./images/interrogacao.png";
 
 function App() {
 
@@ -139,15 +140,15 @@ function App() {
               <h1 className='timeazulescolhidostitulo'>escolhidos</h1>
               <div className='timeazulescolhidos'>
               <img className='timeazulescolhidosposicao' 
-                src={timeCapitaoEscolhidos && timeCapitaoEscolhidos.length > 0 ? timeCapitaoEscolhidos[0].imagem : ''} 
+                src={timeCapitaoEscolhidos && timeCapitaoEscolhidos.length > 0 ? timeCapitaoEscolhidos[0].imagem : FotoInterrogacao} 
                 alt={personagemSelecionado ? personagemSelecionado.nome : ''}
               />
                 <img className='timeazulescolhidosposicao' 
-                src={timeCapitaoEscolhidos && timeCapitaoEscolhidos.length > 1 ? timeCapitaoEscolhidos[1].imagem : ''} 
+                src={timeCapitaoEscolhidos && timeCapitaoEscolhidos.length > 1 ? timeCapitaoEscolhidos[1].imagem : FotoInterrogacao} 
                 alt={personagemSelecionado ? personagemSelecionado.nome : ''}
               />
                 <img className='timeazulescolhidosposicao2' 
-                src={timeCapitaoEscolhidos && timeCapitaoEscolhidos.length > 2 ? timeCapitaoEscolhidos[2].imagem : ''} 
+                src={timeCapitaoEscolhidos && timeCapitaoEscolhidos.length > 2 ? timeCapitaoEscolhidos[2].imagem : FotoInterrogacao} 
                 alt={personagemSelecionado ? personagemSelecionado.nome : ''}
               />
               </div>
@@ -176,15 +177,15 @@ function App() {
               <h1 className='timevermelholescolhidostitulo'>escolhidos</h1>
               <div className='timevermelholescolhidos'>
               <img className='timevermelhoescolhidosposicao' 
-                src={timeHomemDeFerroEscolhidos && timeHomemDeFerroEscolhidos.length > 0 ? timeHomemDeFerroEscolhidos[0].imagem : ''} 
+                src={timeHomemDeFerroEscolhidos && timeHomemDeFerroEscolhidos.length > 0 ? timeHomemDeFerroEscolhidos[0].imagem : FotoInterrogacao} 
                 alt={personagemSelecionado ? personagemSelecionado.nome : ''}
               />
               <img className='timevermelhoescolhidosposicao' 
-                src={timeHomemDeFerroEscolhidos && timeHomemDeFerroEscolhidos.length > 1 ? timeHomemDeFerroEscolhidos[1].imagem : ''} 
+                src={timeHomemDeFerroEscolhidos && timeHomemDeFerroEscolhidos.length > 1 ? timeHomemDeFerroEscolhidos[1].imagem : FotoInterrogacao} 
                 alt={personagemSelecionado ? personagemSelecionado.nome : ''}
               />
               <img className='timevermelhoescolhidosposicao2' 
-                src={timeHomemDeFerroEscolhidos && timeHomemDeFerroEscolhidos.length > 2 ? timeHomemDeFerroEscolhidos[2].imagem : ''} 
+                src={timeHomemDeFerroEscolhidos && timeHomemDeFerroEscolhidos.length > 2 ? timeHomemDeFerroEscolhidos[2].imagem : FotoInterrogacao} 
                 alt={personagemSelecionado ? personagemSelecionado.nome : ''}
               />
               </div>
