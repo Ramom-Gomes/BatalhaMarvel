@@ -234,7 +234,7 @@ function App() {
             {mensagemVisivel && (
                 <div className="caixa-mensagem">
                   <p>{resultadoVisivel}</p>
-                  <button className='botaofecharresultado' onClick={handleFecharResultado}>fechar</button>
+                  <button className='botaofecharresultado' onClick={handleFecharResultado}>Jogar Novamente</button>
                 </div>
             )}
             {resultadoVisivel && <div className="fundo-transparente"/>}
