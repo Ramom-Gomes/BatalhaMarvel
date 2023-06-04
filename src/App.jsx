@@ -67,6 +67,10 @@ function App() {
   
   function handleFecharResultado() {
     setResultadoVisivel(false);
+    setMensagemVisivel(false);
+    setTimeCapitaoEscolhidos([]);
+    setTimeHomemDeFerroEscolhidos([]);
+    setAmbosTimesSelecionados(false);
   }
 
 
@@ -229,9 +233,6 @@ function App() {
             {mensagemVisivel && (
                 <div className="caixa-mensagem">
                   <p>{resultadoVisivel}</p>
-                  <div>...</div>
-                  <div>...</div>
-                  <div>...</div>
                   <button className='botaofecharresultado' onClick={handleFecharResultado}>fechar</button>
                 </div>
             )}
