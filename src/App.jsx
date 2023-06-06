@@ -234,6 +234,7 @@ function App() {
             {mensagemVisivel && (
                 <div className="caixa-mensagem">
                   <p>{resultadoVisivel}</p>
+                  <div>...</div>
                   <button className='botaofecharresultado' onClick={handleFecharResultado}>Jogar Novamente</button>
                 </div>
             )}
