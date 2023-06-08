@@ -250,11 +250,11 @@ function App() {
             <button className='botaolutar' disabled={!ambosTimesSelecionados} onClick={handleLutarClick}>lutar</button>
             {mensagemVisivel && (
                 <div className="caixa-mensagem">
-                  <p>{resultadoVisivel.frase}</p>
-                  <div>{resultadoVisivel.mediaDoTimeDoCapitaoAmerica}</div>
-                  <div>{resultadoVisivel.mediaDoTimeDoHomemDeFerro}</div>
-                  <img src={resultadoVisivel.imagem} alt="Gif do vencedor" />
-                  <button className='botaofecharresultado' onClick={handleFecharResultado}>Jogar Novamente</button>
+                  <p className='mensagem-frase'>{resultadoVisivel.frase}</p>
+                  <div className='mensagem-media-capitao'>{resultadoVisivel.mediaDoTimeDoCapitaoAmerica}</div>
+                  <div className='mensagem-media-ferro'>{resultadoVisivel.mediaDoTimeDoHomemDeFerro}</div>
+                  <img className='mensagem-gif' src={resultadoVisivel.imagem} alt="Gif do vencedor" />
+                  <button className='mensagem-botao' onClick={handleFecharResultado}>Jogar Novamente</button>
                 </div>
             )}
             {resultadoVisivel && <div className="fundo-transparente"/>}

@@ -91,7 +91,10 @@
 .timeazulpersonagensparaescolher, .timevermelhopersonagensparaescolher {
     height: 100px;
     width: 100px;
-    
+}
+
+.timeazulpersonagensparaescolher:hover {
+    border: 3px solid black;
 }
 
 .timeazulpersonagensescolhidos, .timevermelholpersonagensescolhidos {
@@ -111,13 +114,13 @@
     margin-right: 20px;
     width: 100px;
     height: 100px;
-    border: 1px solid black;
+    border: 1px dashed black;
 }
 
 .timeazulescolhidosposicao2, .timevermelhoescolhidosposicao2 {
     width: 100px;
     height: 100px;
-    border: 1px solid black;
+    border: 1px dashed black;
 }
 
 .timevermelho {
@@ -176,9 +179,30 @@
     z-index: 9998;
 }
 
-.botaofecharresultado {
+.mensagem-frase, .mensagem-media-capitao, .mensagem-media-ferro {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.mensagem-media-capitao {
+    color: #4169E1;
+}
+
+.mensagem-media-ferro {
+    color: #B22222;
+}
+
+.mensagem-botao {
     margin: auto;
     margin-top: 20px;
     width: 200px;
-    height: 25px;
+    height: 30px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #4169E1 50%, #B22222 50%);
+    font-size: 15px;
+}
+
+.mensagem-botao:hover {
+    width: 203px;
+    height: 32px;
 }
