@@ -4,6 +4,7 @@ import {timeCapitaoAmerica, timeHomemDeFerro} from "./personagens/personagens";
 import FotoInterrogacao from "./images/interrogacao.png";
 import gifHomemDeFerro from "./images/gifHomemDeFerro.gif";
 import gifCapitaoAmerica from "./images/gifCapitaoAmerica.gif";
+import gifEmpate from "./images/gifEmpate.gif";
 
 function App() {
 
@@ -73,9 +74,9 @@ function App() {
     } else {
       resultado = {
         frase: "A batalha terminou em empate!",
-        mediaDoTimeDoCapitaoAmerica: mediaCapitao.toFixed(0),
-        mediaDoTimeDoHomemDeFerro: mediaHomemDeFerro.toFixed(0),
-        imagem: null
+        mediaDoTimeDoCapitaoAmerica: `Média time do Capitão América: Média: ${mediaCapitao.toFixed(0)}`,
+        mediaDoTimeDoHomemDeFerro: `Média time do Homem de Ferro: ${mediaHomemDeFerro.toFixed(0)}`,
+        imagem: gifEmpate
       }
     }
 

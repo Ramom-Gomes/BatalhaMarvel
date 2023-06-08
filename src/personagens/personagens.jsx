@@ -176,20 +176,3 @@ export const timeHomemDeFerro = [
       imagem: aranha
     }
 ];  
-
-function calcularMedia(personagem) {
-  const atributos = Object.entries(personagem);
-  const valoresNumericos = atributos
-    .filter(([chave, valor]) => typeof valor === 'number' && chave !== 'mediaGeral')
-    .map(([chave, valor]) => valor);
-  const soma = valoresNumericos.reduce((total, atributo) => total + atributo, 0);
-  const media = soma / valoresNumericos.length;
-  return media;
-}
-
-// Loop para calcular e exibir a média de cada personagem
-for (let i = 0; i < timeHomemDeFerro.length; i++) {
-  const personagem = timeHomemDeFerro[i];
-  const media = calcularMedia(personagem);
-  console.log(`Média de ${personagem.nome}: ${media.toFixed(2)}`);
-}
