@@ -50,7 +50,7 @@ export const timeCapitaoAmerica = [
       coragem: 90,
       habilidade: 70,
       Experiencia: 90,
-      mediaGeral: 78,
+      mediaGeral: 79,
       imagem: invernal
     },
     {
@@ -112,15 +112,15 @@ export const timeHomemDeFerro = [
     },
     {
       nome: "Máquina de Combate",
-      forcaFisica: 75,
-      velocidade: 50,
-      agilidade: 60,
+      forcaFisica: 85,
+      velocidade: 70,
+      agilidade: 70,
       resistencia: 80,
       inteligencia: 80,
-      coragem: 80,
-      habilidade: 70,
+      coragem: 85,
+      habilidade: 80,
       Experiencia: 85,
-      mediaGeral: 73,
+      mediaGeral: 79,
       imagem: maquina
     },
     {
