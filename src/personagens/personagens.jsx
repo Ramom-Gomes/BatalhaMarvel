@@ -167,12 +167,12 @@ export const timeHomemDeFerro = [
       forcaFisica: 75,
       velocidade: 85,
       agilidade: 85,
-      resistencia: 70,
+      resistencia: 75,
       inteligencia: 75,
       coragem: 80,
       habilidade: 85,
       Experiencia: 80,
-      mediaGeral: 79,
+      mediaGeral: 80,
       imagem: aranha
     }
 ];  
