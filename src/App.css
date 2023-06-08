@@ -268,3 +268,41 @@
     }
 }
 
+@media (max-width:725px) {
+    .timeazul {
+        flex-direction: column;
+    }
+
+    .timeazulcaracteristicas {
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .timeazulpersonagens {
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .timeazulpersonagensescolhidos {
+        margin-bottom: 30px;
+    }
+
+    .timevermelho {
+        flex-direction: column;
+    }
+
+    .timevermelhopersonagens {
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .timevermelhocaracteristicas {
+       margin: auto;
+       margin-top: 30px;
+    }
+
+    .botaolutar {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+}
