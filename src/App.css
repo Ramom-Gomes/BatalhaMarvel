@@ -154,8 +154,12 @@
     margin-left: -500px;
     border-radius: 5px;
 }
-
   
+.botaolutar:hover {
+    background-color: black;
+    color: #ffffff;
+}
+
 .caixa-mensagem {
     position: absolute;
     top: 50%;
@@ -198,7 +202,8 @@
     width: 200px;
     height: 30px;
     border-radius: 10px;
-    background: linear-gradient(to right, #4169E1 50%, #B22222 50%);
+    background: black;
+    color: #ffffff;
     font-size: 15px;
 }
 
