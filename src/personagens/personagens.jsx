@@ -17,14 +17,14 @@ export const timeCapitaoAmerica = [
     {
       nome: "Capitão América",
       forcaFisica: 95,
-      velocidade: 60,
-      agilidade: 60,
+      velocidade: 75,
+      agilidade: 70,
       resistencia: 90,
       inteligencia: 70,
       coragem: 90,
       habilidade: 75,
       Experiencia: 95,
-      mediaGeral: 79,
+      mediaGeral: 82,
       imagem: capitao
     },
     {
@@ -33,11 +33,11 @@ export const timeCapitaoAmerica = [
       velocidade: 90,
       agilidade: 90,
       resistencia: 80,
-      inteligencia: 60,
+      inteligencia: 75,
       coragem: 85,
       habilidade: 80,
       Experiencia: 70,
-      mediaGeral: 78,
+      mediaGeral: 80,
       imagem: falcao
     },
     {
@@ -50,62 +50,64 @@ export const timeCapitaoAmerica = [
       coragem: 90,
       habilidade: 70,
       Experiencia: 90,
-      mediaGeral: 79,
+      mediaGeral: 78,
       imagem: invernal
     },
     {
       nome: "Homem-Formiga",
-      forcaFisica: 75,
-      velocidade: 70,
+      forcaFisica: 80,
+      velocidade: 80,
       agilidade: 80,
-      resistencia: 70,
+      resistencia: 80,
       inteligencia: 80,
-      coragem: 70,
-      habilidade: 75,
-      Experiencia: 60,
-      mediaGeral: 73,
+      coragem: 80,
+      habilidade: 80,
+      Experiencia: 75,
+      mediaGeral: 79,
       imagem: formiga
     },
     {
       nome: "Gavião Arqueiro",
       forcaFisica: 75,
-      velocidade: 60,
-      agilidade: 70,
+      velocidade: 90,
+      agilidade: 90,
       resistencia: 80,
-      inteligencia: 60,
+      inteligencia: 80,
       coragem: 80,
-      habilidade: 75,
+      habilidade: 80,
       Experiencia: 80,
-      mediaGeral: 72,
+      mediaGeral: 81,
       imagem: arqueiro
     },
     {
       nome: "Feiticeira Escarlate",
-      forcaFisica: 70,
-      velocidade: 60,
-      agilidade: 70,
-      resistencia: 70,
+      forcaFisica: 75,
+      velocidade: 80,
+      agilidade: 80,
+      resistencia: 85,
       inteligencia: 90,
       coragem: 80,
       habilidade: 95,
-      Experiencia: 70,
-      mediaGeral: 75,
+      Experiencia: 80,
+      mediaGeral: 83,
       imagem: feiticeira
     },
 ];
+
+
 
 export const timeHomemDeFerro = [
     {
       nome: "Homem de Ferro",
       forcaFisica: 80,
-      velocidade: 60,
-      agilidade: 70,
+      velocidade: 80,
+      agilidade: 75,
       resistencia: 80,
       inteligencia: 99,
       coragem: 60,
       habilidade: 90,
       Experiencia: 90,
-      mediaGeral: 79,
+      mediaGeral: 82,
       imagem: ferro
     },
     {
@@ -136,15 +138,15 @@ export const timeHomemDeFerro = [
     },
     {
       nome: "Pantera Negra",
-      forcaFisica: 90,
+      forcaFisica: 80,
       velocidade: 80,
-      agilidade: 90,
+      agilidade: 80,
       resistencia: 85,
       inteligencia: 80,
-      coragem: 95,
-      habilidade: 90,
-      Experiencia: 95,
-      mediaGeral: 88,
+      coragem: 85,
+      habilidade: 80,
+      Experiencia: 85,
+      mediaGeral: 81,
       imagem: pantera
     },
     {
@@ -164,13 +166,30 @@ export const timeHomemDeFerro = [
       nome: "Homem-Aranha",
       forcaFisica: 75,
       velocidade: 85,
-      agilidade: 95,
+      agilidade: 85,
       resistencia: 70,
-      inteligencia: 80,
-      coragem: 90,
+      inteligencia: 75,
+      coragem: 80,
       habilidade: 85,
       Experiencia: 80,
-      mediaGeral: 82,
+      mediaGeral: 79,
       imagem: aranha
     }
 ];  
+
+function calcularMedia(personagem) {
+  const atributos = Object.entries(personagem);
+  const valoresNumericos = atributos
+    .filter(([chave, valor]) => typeof valor === 'number' && chave !== 'mediaGeral')
+    .map(([chave, valor]) => valor);
+  const soma = valoresNumericos.reduce((total, atributo) => total + atributo, 0);
+  const media = soma / valoresNumericos.length;
+  return media;
+}
+
+// Loop para calcular e exibir a média de cada personagem
+for (let i = 0; i < timeHomemDeFerro.length; i++) {
+  const personagem = timeHomemDeFerro[i];
+  const media = calcularMedia(personagem);
+  console.log(`Média de ${personagem.nome}: ${media.toFixed(2)}`);
+}
