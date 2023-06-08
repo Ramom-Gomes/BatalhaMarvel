@@ -2,6 +2,8 @@ import './App.css';
 import React, { useState } from 'react';
 import {timeCapitaoAmerica, timeHomemDeFerro} from "./personagens/personagens";
 import FotoInterrogacao from "./images/interrogacao.png";
+import gifHomemDeFerro from "./images/gifHomemDeFerro.gif";
+import gifCapitaoAmerica from "./images/gifCapitaoAmerica.gif";
 
 function App() {
 
@@ -55,11 +57,26 @@ function App() {
     
     let resultado = "";
     if (mediaCapitao > mediaHomemDeFerro) {
-      resultado = `O Time do Capitão venceu a batalha! Média: ${mediaCapitao.toFixed(0)}`;
+      resultado = {
+       frase: `O Time do Capitão América venceu a batalha!`,
+       mediaDoTimeDoCapitaoAmerica: `Média time do Capitão América: Média: ${mediaCapitao.toFixed(0)}`,
+       mediaDoTimeDoHomemDeFerro: `Média time do Homem de Ferro: ${mediaHomemDeFerro.toFixed(0)}`,
+       imagem: gifCapitaoAmerica
+      }
     } else if (mediaHomemDeFerro > mediaCapitao) {
-      resultado = `O Time do Homem de Ferro venceu a batalha! Média: ${mediaHomemDeFerro.toFixed(0)}`;
+      resultado = {
+        frase: `O Time do Homem de Ferro venceu a batalha!`,
+        mediaDoTimeDoCapitaoAmerica: `Média time do Capitão América: Média: ${mediaCapitao.toFixed(0)}`,
+        mediaDoTimeDoHomemDeFerro: `Média time do Homem de Ferro: ${mediaHomemDeFerro.toFixed(0)}`,
+        imagem: gifHomemDeFerro
+      }
     } else {
-      resultado = "A batalha terminou em empate!";
+      resultado = {
+        frase: "A batalha terminou em empate!",
+        mediaDoTimeDoCapitaoAmerica: mediaCapitao.toFixed(0),
+        mediaDoTimeDoHomemDeFerro: mediaHomemDeFerro.toFixed(0),
+        imagem: null
+      }
     }
 
     setResultadoVisivel(resultado);
@@ -233,9 +250,10 @@ function App() {
             <button className='botaolutar' disabled={!ambosTimesSelecionados} onClick={handleLutarClick}>lutar</button>
             {mensagemVisivel && (
                 <div className="caixa-mensagem">
-                  <p>{resultadoVisivel}</p>
-                  <div>...</div>
-                  <div>mensagem de teste</div>
+                  <p>{resultadoVisivel.frase}</p>
+                  <div>{resultadoVisivel.mediaDoTimeDoCapitaoAmerica}</div>
+                  <div>{resultadoVisivel.mediaDoTimeDoHomemDeFerro}</div>
+                  <img src={resultadoVisivel.imagem} alt="Gif do vencedor" />
                   <button className='botaofecharresultado' onClick={handleFecharResultado}>Jogar Novamente</button>
                 </div>
             )}
