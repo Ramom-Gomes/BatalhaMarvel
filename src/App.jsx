@@ -255,6 +255,7 @@ function App() {
                   <div className='mensagem-media-capitao'>{resultadoVisivel.mediaDoTimeDoCapitaoAmerica}</div>
                   <div className='mensagem-media-ferro'>{resultadoVisivel.mediaDoTimeDoHomemDeFerro}</div>
                   <img className='mensagem-gif' src={resultadoVisivel.imagem} alt="Gif do vencedor" />
+                  <div>...</div>
                   <button className='mensagem-botao' onClick={handleFecharResultado}>Jogar Novamente</button>
                 </div>
             )}
