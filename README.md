@@ -10,6 +10,8 @@ Link para visualização total do projeto: [VISUALIZAÇÃO](https://vermillion-l
 
 
 <div align="center" display="flex">
+  <img src="https://github.com/Ramom-Gomes/BatalhaMarvel/assets/110055468/092bd7ed-6357-4863-8c4d-c6477cd34138" width="400px" />
+  <img src="https://github.com/Ramom-Gomes/BatalhaMarvel/assets/110055468/96825a89-b741-4a47-85ec-2e11e3bc8e1c" width="400px" />
 </div>
 
 
