@@ -6,7 +6,8 @@ O projeto BatalhaMarvel é um jogo simulando uma batalha entre a equipe do capit
 com o filme capitão américa guerra civil. Para o desenvolvimento desse projeto foi utilizado a tecnologia ReactJS.
 
 
-Link para visualização total do projeto: [VISUALIZAÇÃO]([https://cute-arithmetic-afc5d4.netlify.app/](https://vermillion-licorice-a9b66a.netlify.app/)).
+Link para visualização total do projeto: [VISUALIZAÇÃO](https://vermillion-licorice-a9b66a.netlify.app/).
+
 
 <div align="center" display="flex">
 </div>
@@ -28,8 +29,8 @@ Link para visualização total do projeto: [VISUALIZAÇÃO]([https://cute-arithm
 Primeiro, você deve clonar o projeto na sua máquina, para isso você pode colar o seguinte comando em seu terminal:
 
 ```bash
-  git clone https://github.com/Ramom-Gomes/Rick-Morty.git
-  cd Rick-Morty
+  git clone https://github.com/Ramom-Gomes/BatalhaMarvel.git
+  cd BatalhaMarvel
 ```
 Para instalar as dependências, execute o seguinte comando:
 
