@@ -140,7 +140,7 @@ function App() {
           <div className='timeazulpersonagens'>
             <div className='timeazulescolherpersonagem'>
               <div>
-                <h1 className='timeazultitulo'>time azul</h1>
+                <h1 className='timeazultitulo'>Time Capitão América</h1>
                 <p className='timeazulinfo'>escolha três personagens</p>
               </div>
               <div className='timeazulescolhadepersonagens'>
@@ -177,7 +177,7 @@ function App() {
           <div className='timevermelhopersonagens'>
             <div className='timevermelhoescolherpersonagem'>
               <div>
-                <h1 className='timevermelhotitulo'>time azul</h1>
+                <h1 className='timevermelhotitulo'>Time Homem de ferro</h1>
                 <p className='timevermelhoinfo'>escolha três personagens</p>
               </div>
               <div className='timevermelhoescolhadepersonagens'>
