@@ -90,6 +90,8 @@ function App() {
     setTimeCapitaoEscolhidos([]);
     setTimeHomemDeFerroEscolhidos([]);
     setAmbosTimesSelecionados(false);
+    setPersonagemSelecionado(null);
+    setPersonagemSelecionado2(null);
   }
 
 
